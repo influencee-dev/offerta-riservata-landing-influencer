@@ -162,3 +162,24 @@ footer img{height:22px}
   *,*:before,*:after{animation:none!important;transition:none!important}
   h1 .w,.rv{opacity:1;transform:none}
 }
+
+/* LEAD-MODAL */
+.lm[hidden]{display:none}
+.lm{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px}
+.lm-bg{position:absolute;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(4px)}
+.lm-box{position:relative;width:min(440px,100%);max-height:calc(100vh - 32px);overflow:auto;background:#1A1A1A;color:#fff;border:1px solid #2A2A2A;border-top:4px solid #E6007E;padding:28px 26px 24px;animation:lmin .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes lmin{from{opacity:0;transform:translateY(18px) scale(.98)}}
+.lm-x{position:absolute;right:10px;top:8px;background:none;border:0;color:#BDBDBD;font-size:28px;line-height:1;cursor:pointer;padding:6px 10px}.lm-x:hover{color:#fff}
+.lm h3{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;font-size:24px;line-height:1.1;margin:0 28px 8px 0}
+.lm-s{color:#BDBDBD;font-size:14px;margin:0 0 16px}.lm-s b{color:#fff}
+.lm form{display:grid;gap:12px}
+.lm label{display:grid;gap:5px;font-size:13px;font-weight:600;color:#fff}.lm label small{font-weight:400;color:#888}
+.lm input:not([type=checkbox]){width:100%;background:#0A0A0A;border:1px solid #2A2A2A;color:#fff;font:inherit;font-size:15px;padding:12px 13px;border-radius:0}
+.lm input:not([type=checkbox]):focus{outline:2px solid #E6007E;outline-offset:1px;border-color:#E6007E}
+.lm .lm-c{display:flex;align-items:flex-start;gap:10px;font-weight:400;font-size:12.5px;color:#BDBDBD;line-height:1.5}
+.lm .lm-c input{margin-top:3px;width:17px;height:17px;flex:none;accent-color:#E6007E}.lm .lm-c a{color:#fff}
+.lm-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.lm-e{margin:0;color:#ff7aa8;font-size:13px;font-weight:600}
+.lm-go{background:#E6007E;color:#fff;border:0;font:inherit;font-weight:700;font-size:15px;padding:15px 20px;cursor:pointer;transition:background .2s,transform .2s}
+.lm-go:hover{background:#CC0066;transform:translateY(-1px)}.lm-go:disabled{opacity:.7;cursor:wait}
+html.lm-open{overflow:hidden}
