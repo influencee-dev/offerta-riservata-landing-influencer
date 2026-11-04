@@ -194,3 +194,13 @@ html.lm-open{overflow:hidden}
 .screen .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .screen .top{color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6);z-index:1}
 .screen .top .av{border:1.5px solid #fff}
+
+/* MOCK-TEXT */
+.browser .hb{gap:6px}
+.browser .hb small{font-size:12px;font-weight:500;color:rgba(255,255,255,.92);line-height:1.35}
+.browser .hb u{display:inline-block;width:auto;height:auto;justify-self:start;background:#fff;color:#0A0A0A;text-decoration:none;font-weight:700;font-size:11px;padding:7px 12px;margin-top:4px}
+.browser .row{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:500;color:#BDBDBD;padding:3px 0}
+.browser .row:before{content:"";flex:none;width:6px;height:6px;background:#E6007E}
+
+/* MOCK-PHONE */
+@media(max-width:900px){.stage .phone.p3[style]{top:47%!important}}
